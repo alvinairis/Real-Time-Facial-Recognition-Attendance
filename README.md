@@ -1,115 +1,28 @@
-# Real-Time Facial Recognition Attendance System
+Face Recognition-Based Attendance System Using Python
 
-A Python-based project for recording attendance using facial recognition
-through a camera.
+An automated attendance system built with Python and OpenCV that detects and recognizes faces from images or real-time video feeds, matches them against stored face records, and logs timestamped attendance in a database to reduce manual effort and prevent proxy attendance.
 
-> **Project status:** Add your current development status here (for
-> example, Completed, In Progress, or Prototype).
+Overview
 
-## Overview
+Traditional manual roll calls and RFID-based attendance methods can be time-consuming, prone to human error, or vulnerable to proxy attendance. This project uses computer vision and machine learning/deep learning techniques to streamline attendance tracking in educational and corporate environments.
 
-This project aims to identify registered users from live camera input
-and record their attendance automatically. It is intended to reduce
-manual attendance work and make attendance recording more convenient.
+Key Features
 
-## Features
+- Real-Time Face Detection & Recognition: Captures frames from a camera feed or input image, detects faces, and compares them with stored face data.
+- Automated Attendance Logging: Records matched identities with timestamps into a database upon successful recognition.
+- Proxy Prevention & Efficiency: Reduces manual intervention and speeds up attendance recording.
 
--   Capture or process face images using a camera.
--   Recognize registered faces using the face-recognition method
-    implemented in this project.
--   Record attendance with a date and time.
--   Store attendance records for later review.
+Workflow
 
-> Edit this list to include only the features that are actually
-> implemented in your code.
+1. Face Data Storage: Enroll individuals and store reference facial data.
+2. Capture & Detection: Capture images or real-time video frames and locate faces using computer vision/deep learning models.
+3. Recognition & Logging: Match detected faces against stored data and write timestamped attendance entries to the database.
 
-## Technologies Used
+Authors
 
--   **Programming language:** Python
--   **Computer vision:** OpenCV (if used in your implementation)
--   **Recognition model/library:** Add the exact model or library used
--   **Storage:** Add your database or file format (CSV, SQLite, MySQL,
-    etc.)
+- Solomon Arun. A, Assistant Professor, Dept. of Computer Science and Engineering, Jeppiaar Institute of Technology, Chennai, India
+- S.C. Alvina Iris, UG Scholar, Dept. of Computer Science and Engineering, Jeppiaar Institute of Technology, Chennai, India
 
-## Project Structure
+Paper
 
-Update this section to match the files and folders in your repository.
-
-``` text
-Real-Time-Facial-Recognition-Attendance/
-├── README.md
-├── main.py
-├── requirements.txt
-├── src/
-├── models/
-└── attendance/
-```
-
-## Requirements
-
--   Python 3.x
--   A camera/webcam
--   The Python packages listed in `requirements.txt`
-
-## Installation
-
-1.  Clone this repository:
-
-    ``` bash
-    git clone https://github.com/alvinairis/Real-Time-Facial-Recognition-Attendance.git
-    ```
-
-2.  Open the project folder:
-
-    ``` bash
-    cd Real-Time-Facial-Recognition-Attendance
-    ```
-
-3.  (Recommended) Create and activate a virtual environment:
-
-    ``` bash
-    python -m venv venv
-    ```
-
-4.  Install the dependencies:
-
-    ``` bash
-    pip install -r requirements.txt
-    ```
-
-## How to Run
-
-Replace the command below with the correct entry-point file and
-instructions for your project:
-
-``` bash
-python main.py
-```
-
-Follow the prompts shown by the application and allow camera access if
-requested.
-
-## Attendance Data and Privacy
-
-Use only face images for which you have permission. Do not commit real
-people's face images, biometric data, personal attendance records, model
-files containing private data, passwords, or API keys to a public
-repository. Use synthetic or consent-based sample data when
-demonstrating the project.
-
-## Screenshots
-
-Add screenshots of your application here after removing names, face
-images, and other personal information.
-
-## Author
-
-**Alvina Iris S C**
-
-GitHub: [@alvinairis](https://github.com/alvinairis)
-
-## Notes
-
-This README is a starter document. Before publishing, update the project
-structure, technologies, dependencies, features, and run command so they
-accurately describe the code in this repository.
+See IEEE-Paper.pdf for full methodology, implementation details, and evaluation.
